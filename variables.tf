@@ -30,7 +30,7 @@ variable "instance_type" {
 }
 
 variable "admin_username" {
-  description = "Administrator user name for mysql"
+  description = "This is Administrator user name for mysql"
   default     = "hashicorp"
 }
 
