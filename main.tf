@@ -9,6 +9,9 @@ terraform {
 
 provider "aws" {
   region  = var.region
+   assume_role {
+    role_arn     = "arn:aws:iam::711129375688:role/se_demos_dev-developer"
+  }
 }
 
 resource "aws_vpc" "hashicat" {
